@@ -70,13 +70,13 @@ def model_selection(name):
     elif name=='StackingClassifier(KNN,GNB,LR)':
         model="stacking3"+'.pkl'
                 
-    elif name=='StackingClassifier(RF,GNB,LR)':
-        model="stacking4"+'.pkl'
+#     elif name=='StackingClassifier(RF,GNB,LR)':
+#         model="stacking4"+'.pkl'
         
 
    
-    elif name=='Random Forest':
-        model="rf.pkl"
+#     elif name=='Random Forest':
+#         model="rf.pkl"
         
     elif name=='CatBoost':
         model="catboost.pkl"
@@ -300,7 +300,7 @@ def main():
     option = st.selectbox(
     'Select A Classifier',
      ('CatBoost','Voting Classifier(DT,KNN,LR)', 'Voting Classifier(DT,KNN,GNB)',
-      'StackingClassifier(KNN,RF,LR)','StackingClassifier(RF,GNB,LR)'))
+      'StackingClassifier(KNN,RF,LR)'))
 
     st.write('You selected:', option)
     
